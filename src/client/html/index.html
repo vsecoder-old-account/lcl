@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>localhost.io</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="shortcut icon" href="/assets/favicon.ico">
+  <meta property="og:image" content="/assets/icon1200.png">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-58664433-3"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-58664433-3');
+  </script>
+</head>
+<body>
+  <audio src="/assets/msc.mp3" autoplay="autoplay">Музыка</audio>
+  <canvas id="game-canvas"></canvas>
+  <div id="play-menu" class="hidden">
+    <img src="/assets/favicon.ico">
+    <h1>localhost.io</h1>
+    <hr>
+    <p>Выживайте как можно дольше, или сражаетесь с противниками!</p>
+    <p>Управление курсором</p>
+    <hr>
+    <input type="text" id="username-input" placeholder="Никнейм" />
+    <button id="play-button">PLAY</button>
+  </div>
+  <div id="leaderboard" class="hidden">
+    <table>
+      <tr>
+        <th>Ник</th>
+        <th>Очков</th>
+      </tr>
+      <tr><td></td><td></td></tr>
+      <tr><td></td><td></td></tr>
+      <tr><td></td><td></td></tr>
+      <tr><td></td><td></td></tr>
+      <tr><td></td><td></td></tr>
+    </table>
+  </div>
+  <div id="disconnect-modal" class="hidden">
+    <div>
+      <h2>Disconnected from Server </h2>
+      <hr>
+      <button id="reconnect-button">RECONNECT</button>
+    </div>
+  </div>
+</body>
+</html>
